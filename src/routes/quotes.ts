@@ -4,7 +4,6 @@ import { getQualifioWsUrl } from '../utils/qualifio';
 
 const router = express.Router();
 
-// Define routes
 router.get('/quotes', async (req, res, next) => {
     try {
         const quotes = await axios.get(getQualifioWsUrl());
